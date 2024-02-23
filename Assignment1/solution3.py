@@ -13,12 +13,13 @@ def solution3(data: str):
     #     elif cState == 1:
     #         pass
     # return cState == 1
+    """
+    above code failed some cases
+    """
     try:
-        if data[0]==data[-1]:
-            return True
+        return data[0]==data[-1]
     except Exception:
         pass
-    return False
 
 
 print("Accepted? ", solution3(input("Enter the input: ")))
